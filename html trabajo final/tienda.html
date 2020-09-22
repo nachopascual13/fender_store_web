@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		tienda
+	</title>
+
+	<meta charset="utf-8">
+
+	<meta	name="viewport"	content="width=device-width,	initial-scale=1,	shrink-to-fit=no">
+
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		#fila-1{
+			margin-top: 50px;
+			z-index: -1;
+		}
+
+		#texto-sobre-img{
+				position: absolute;
+				text-align: center;
+				margin-top: 40px;
+				margin-left: 60px;
+				color: white;
+
+				}	
+		#texto-sobre-img-2{
+				position: absolute;
+				text-align: center;
+				margin-top: 40px;
+				margin-left: 460px;
+				color: black;
+
+				}
+
+		#texto-sobre-img-2{
+			position: absolute;
+			text-align: center;
+			margin-top: 400px;
+			margin-left: 120px;
+				
+			}
+
+		#seccion-portfolio{
+			text-align: center;
+		    margin-top: 20px;
+		    background-color: grey;
+		
+		}
+
+		footer{
+			height: auto;
+			background-color: black;
+			margin-top: 80px;
+		}
+
+		#form-footer{
+			margin-top: 40px;
+		}
+		#form-footer label{
+			color: #fff;
+		}
+
+		#form-footer button{
+			margin-top: 10px;
+			background-color: grey;
+			width: 150px;
+			color: #fff;
+			border-style: none;
+		}
+
+		#direccion{
+			color:#fff;
+		}
+
+		#col2-footer{
+			margin-top: 20px;
+			margin-left: 30px;
+		}
+
+		#seccion-texto-2{
+			text-align: center;
+		}
+
+
+		#seccion-texto{
+			margin-left: 50px;
+			padding-top: 50px;
+			margin-bottom: -20px;
+			font-style: oblique;
+			font-family: monospace;
+			margin-top: 50px;
+			font-weight: bold;
+
+
+		}
+
+		#seccion-portfolio{
+			margin-top: 80px;
+			background-color: white;
+			margin-left: 2px;
+
+
+
+		}
+
+		.col{
+			margin-top: 10px;
+		}
+
+		.col-lg-4{
+			margin-top: -50px;
+		}
+
+		h2{
+			font-size: 20px;
+			font-family: inherit;
+			font-weight: bolder;
+			margin-top: 10px;
+		}
+
+		h3{
+			font-size: 40px;
+		}
+
+		h4{
+			font-size: 16px;
+		}
+
+		#seccion-texto-2{
+			margin-top: 55px;
+		}
+
+		.form-control{
+			border-radius: 10%;
+			width: 150px;
+			margin-left: 150px;	
+			margin-top: 20px;
+			background-color: darkred;
+			color: white;
+			cursor: pointer;
+
+
+		}
+
+		.image-fluid{
+			border-radius: 15px;
+
+		}
+
+		.image-fluid-4{
+			border-radius: 15px;
+			height: 250px;
+		}
+
+		#seccion-texto-2{
+			font-style: oblique;
+			font-family: monospace;
+			margin-top: 50px;
+			font-weight: bold;
+
+		}
+
+		
+
+		.container-fluid-2{
+			margin-top: -30px;
+		}
+
+		.img-fluid-2{
+			margin-left: 75px;
+		}
+
+		.img-fluid-3{
+			margin-left: 90.5px;
+			margin-top: 0px;
+		}
+
+		.container-body{
+			margin:0px;
+			padding:0px;
+			font-family: inherit;
+			background-color: #202020;
+			color: white;
+			display: flex;
+			margin: auto;
+			padding-bottom: 30px;
+
+			
+
+			
+		}
+
+		.colum1{
+			max-width: 400px;
+			margin-left: 50px;
+		}
+
+		.container-footer{
+			margin-top: -10px;
+			margin-bottom: -500px;
+			color: white;
+			margin-top: 5px;
+
+
+
+		}
+
+		.colum1 h1{
+			font-size: 22px;
+			margin-top: 30px;
+		}
+
+		.colum1 p{
+			font-size: 14px;
+			color: #C7C7C7;
+			margin-top:20px;
+		}
+
+		.colum2{
+			max-width: 400px;
+			margin-left: 50px;
+		}
+
+		.colum2 h1{
+			font-size: 22px;
+			margin-top: 30px;
+			margin-left: 35px;
+
+		}
+
+		.colum2 .row-1{
+			margin-top: 10px;
+			display: flex;
+		}
+
+		.row-1  img{
+			width: 36px;
+			height: 36px;
+		}
+
+		.row-1 label{
+			margin-top: 10px;
+			margin-left: 20px;
+			color: #C7C7C7
+			margin-top:5PX;
+		}
+
+		.colum3{
+			max-width: 400px;
+
+		}
+
+		.colum3 h1{
+			font-size: 22px;
+			margin-top: 30px;
+			margin-left: 160px;
+
+		}
+
+		.row-2{
+			margin-top: 20px;
+		}
+
+		.row-2 label{
+			margin-left: 20px;
+			margin-top: 10px;
+			color: #C7C7C7;
+		}
+
+		.politica{
+			font-size: 11px;
+			margin-top: 500px;
+			background-color: black;
+			margin-top: 10px;
+
+		}
+
+		.image-f{
+			margin-left: 70px;
+			margin-top: 35px;
+		}
+
+		.colum3 .row-2{
+			margin-left: 140px;
+		}
+
+		.contact{
+			border-width: 0;
+ 			border-radius: 0;
+			border-bottom-width: 1px;
+			border-style: dotted;
+			background-color: transparent;
+			padding: 2px 0;
+			outline: none;
+			border-color: #ccc;
+			font-weight: bold;
+			margin-top: 40px;
+			color: white;
+		}
+
+		.subscribe-button{
+			background-color: #60769a !important;
+			border-color: #60769a !important;
+			color: #fff;
+			margin-left: 212px;
+			padding-top: -800px;
+
+		}
+
+		.texto-encima{
+    	position: absolute;
+    	color: white;
+    	margin-left: 100px;
+    	font-size: 35px;
+    	font-family: monospace;
+    	padding-top: 350px;
+    	font-weight: bold;
+		}
+
+		.centrado{
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+		}
+
+		.texto-encima-2{
+    	position: absolute;
+    	color: white;
+    	margin-left: 115px;
+    	font-size: 35px;
+    	font-family: monospace;
+    	padding-top: 350px;
+    	font-weight: bold;
+		}
+
+		.centrado-2{
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="row">
+			
+			 <nav class="navbar navbar-expand-md navbar-white bg-white fixed-top">
+
+  				<a class="navbar-brand" href="#"><img src="https://img.milanuncios.com/fg/2600/44/260044150_1.jpg?VersionId=e7vjVipto3Pb4Is4mwkWeqEBV48IIlGL" width=100></a>
+
+
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="	#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  				</button>
+
+  				<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    				<ul class="navbar-nav mr-auto">
+    					<li class="nav-item">
+    						<a class="nav-link" href="PaginaPrincipal.html">Inicio</a>
+    					</li>
+      					<li class="nav-item">
+        				<a class="nav-link" href="tienda.html">Tienda</a>
+      					</li>
+
+				      <li class="nav-item">
+				        <a class="nav-link" href="QuienesSomos.html">Quiénes somos</a>
+				      </li>
+
+				    
+
+				      <li class="nav-item">
+				        <a class="nav-link" href="blog.html">Blog</a>
+				      </li>
+
+				       <li class="nav-item">
+				        <a class="nav-link" href="contacto.html">Contacto</a>
+				      </li>
+
+				 
+
+				       <li class="nav-item">
+				        <a class="nav-link" href="#">Soporte</a>
+				      </li>
+
+				      <li class="nav-item">
+				        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+				      </li>
+				       	
+    				</ul>
+  					</div>
+				</nav>
+				
+		</header>
+	</div>
+
+
+	<section id="seccion-texto" class="container-fluid">
+		
+		<div class="row">
+			<div class="col">
+				<h3 id="texto-1">Stratocaster</h3>
+				<h4>6 resultados</h4>
+				<hr>
+			</div>	
+		</div>
+
+	</section>
+
+	<section id="seccion-portfolio" class="container-fluid">
+		
+		<div class="row">
+			<div class="col-lg-4">
+
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0118010781_gtr_frt_001_rr.jpg" width="100">
+				<h2>American Ultra Stratocaster</h2>
+				<hr>
+				<h4>2.189€ | 3 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+			</div>
+			<div class="col-lg-4">
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0118020795_gtr_frt_001_rr.jpg" width="100">
+				<h2>American Ultra Stratocaster HSS</h2>
+				<hr>
+				<h4>2.209€ | 5 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+
+			</div>
+			<div class="col-lg-4">
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10002/0149962304_gtr_frt_001_rr.jpg" width="100">
+				<h2>Vintera ´50s Stratocaster Modified</h2>
+				<hr>
+				<h4>1.009€ | 2 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+			</div>
+		</div>
+		
+
+	</section>
+	<section id="seccion-portfolio" class="container-fluid">
+		
+		<div class="row">
+			<div class="col-lg-4">
+
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0116502778_gtr_frt_001_rr.jpg" width="100" >
+				<h2>Lincoln Brewster Stratocaster</h2>
+				<hr>
+				<h4>2.189€</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+			</div>
+			<div class="col-lg-4">
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0176790760_gtr_frt_001_rr.jpg" width="100">
+				<h2>Parallel Universe II uptown Stratocaster</h2>
+				<hr>
+				<h4>2.249€| 2 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+
+			</div>
+			<div class="col-lg-4">
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0144552531_gtr_frt_001_rr.jpg" width="100">
+				<h2>Player Stratocaster Plus Top</h2>
+				<hr>
+				<h4>899€ | 4 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+			</div>
+		</div>
+		
+
+	</section>
+
+	<section id="seccion-texto" class="container-fluid">
+		
+		<div class="row">
+			<div class="col">
+				<h3 id="texto-1">Telecaster</h3>
+				<h4>6 resultados</h4>
+				<hr>
+			</div>	
+		</div>
+
+	</section>
+
+	<section id="seccion-portfolio" class="container-fluid">
+		
+		<div class="row">
+			<div class="col-lg-4">
+
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0140069550_gtr_frt_001_rr.jpg" width="100">
+				<h2>Limited Edition Player Telecaster</h2>
+				<hr>
+				<h4>789€ | 2 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+			</div>
+			<div class="col-lg-4">
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0149812307_gtr_frt_001_rr.jpg" width="100">
+				<h2>Vintera ´70s Telecaster Deluxe</h2>
+				<hr>
+				<h4>1.009€ | 3 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+
+			</div>
+			<div class="col-lg-4">
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0110172834_gtr_frt_001_rr.jpg" width="100">
+				<h2>American Original ´60s Telecaster Thinline</h2>
+				<hr>
+				<h4>2.159€ | 2 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+			</div>
+		</div>
+		
+
+	</section>
+	<section id="seccion-portfolio" class="container-fluid">
+		
+		<div class="row">
+			<div class="col-lg-4">
+
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0118030781_gtr_frt_001_rr.jpg" width="100" >
+				<h2>American Ultra Telecaster</h2>
+				<hr>
+				<h4>2.189€ | 3 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+			</div>
+			<div class="col-lg-4">
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0170270868_gtr_frt_001_rr.jpg" width="100">
+				<h2>70th Anniversary Broadcaster </h2>
+				<hr>
+				<h4>2.309€</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+
+			</div>
+			<div class="col-lg-4">
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0110182829_gtr_frt_001_rr.jpg" width="100">
+				<h2>American Original 70s Telecaster Custom</h2>
+				<hr>
+				<h4>2.059€ | 2 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+			</div>
+		</div>
+		
+
+	</section>
+
+	<section id="seccion-texto" class="container-fluid">
+		
+		<div class="row">
+			<div class="col">
+				<h3 id="texto-1">Bajos eléctricos</h3>
+				<h4>6 resultados</h4>
+				<hr>
+			</div>	
+		</div>
+
+	</section>
+
+	<section id="seccion-portfolio" class="container-fluid">
+		
+		<div class="row">
+			<div class="col-lg-4">
+
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0199010732_gtr_frt_001_rr.jpg" width="100">
+				<h2>American Ultra Precision Bass</h2>
+				<hr>
+				<h4>2.309€ | 3 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+			</div>
+			<div class="col-lg-4">
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0199022790_gtr_frt_001_rr.jpg" width="100">
+				<h2>American Ultra Jazz Bass</h2>
+				<hr>
+				<h4>2.309€ | 2 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+
+			</div>
+			<div class="col-lg-4">
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0149653340_gtr_frt_001_rr.jpg" width="100">
+				<h2>Vintera ´60s Mustang Bass</h2>
+				<hr>
+				<h4>969€ | 4 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+			</div>
+		</div>
+		
+
+	</section>
+	<section id="seccion-portfolio" class="container-fluid">
+		
+		<div class="row">
+			<div class="col-lg-4">
+
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0198600300_gtr_frt_001_rr.jpg" width="100" >
+				<h2>American Performer Precision Bass</h2>
+				<hr>
+				<h4>1.369€ | 3 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+			</div>
+			<div class="col-lg-4">
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0192612728_gtr_frt_001_rr.jpg" width="100">
+				<h2>Flea Signature Active Jazz Bass </h2>
+				<hr>
+				<h4>1.909€ | 2 colores</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+
+			</div>
+			<div class="col-lg-4">
+				<img class="image-fluid" id="" src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0144052547_gtr_frt_001_rr.jpg" width="100">
+				<h2>Player Mustang Bass PJ</h2>
+				<hr>
+				<h4>689€</h4>
+					<button class="form-control" type="submit">Más información</button class="d-block w-100">
+			</div>
+		</div>
+		
+
+	</section>
+
+	<footer>
+		
+		<div class="container-body">
+
+			<div class="colum1">
+				<h1>Más información de la compañía</h1>
+				<p>Guitarras eléctricas |
+				 Stratocaster |
+				 Telecaster |
+                 Amplificadores |
+                 Bajos | Guitarras acústicas | 
+                 Tuner App | Fender Tone | Fender Play</p>
+                 <img class="image-f" src="https://seeklogo.com/images/F/fender-50s-telecaster-logo-CFE2704861-seeklogo.com.png" width="200" class="d-block w-100">
+			</div>
+
+			<div class="colum2">
+				<h1>Redes Sociales</h1>
+
+				<div class="row-1">
+					<img src="https://boe.clermontcountyohio.gov/wp-content/uploads/sites/29/2018/02/facebook-300x300.png">
+					<label>Síguenos en Facebook</label>
+				</div>
+
+				<div class="row-1">
+					<img src="https://i2.wp.com/casalpopularvr.org/wp-content/uploads/2018/04/twitter-round-logo-png-transparent-background-7.png">
+					<label>Síguenos en Twitter</label>
+				</div>
+
+				<div class="row-1">
+					<img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c521.png">
+					<label>Síguenos en Instagram</label>
+				</div>
+
+				<div class="row-1">
+					<img src="https://i.pinimg.com/originals/de/1c/91/de1c91788be0d791135736995109272a.png">
+					<label>Síguenos en Youtube</label>
+				</div>
+
+				<div class="row-1">
+					<img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c52e.png">
+					<label>Síguenos en Pinterest</label>
+				</div>
+
+
+			</div>
+
+			<div class="colum3">
+				<h1>Información Contactos</h1>
+
+				<div class="row-2">
+					<label>C/ La Paz 16
+					46021 Valencia</label>
+				</div>
+
+				<div class="row-2">
+					<img src="">
+					<label>+34 123456789</label>
+
+				</div>
+
+				<div class="row-2">
+					<img src="">
+					<label>Email: fenderguitars@gmail.com</label>
+					<input type="email" class="contact" placeholder="Email" required>
+					<button class="subscribe-button" type="button" id="subscribe-button">Suscríbete</button class="d-block w-100">
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+			<div class="container-footer">
+			<div class="politica">
+				 Copyright ©2020. Fender Musical Instruments Corporation. 
+				 All Rights Reserved.
+				 Privacy Policy
+				 Terms & Conditions
+				 Supply Chain Transparency
+				 Modern Slavery Act 2019
+				 Accessibility Statement
+				 Competition Law |
+				 
+				 <label>Change your region:</label>
+				 <img src="https://images.vexels.com/media/users/3/164599/isolated/preview/ce858535b77f22068049aca2457e59ad-spain-flag-language-icon-circle-by-vexels.png" width="15">
+				
+			</div>
+			</div>
+
+		</div>
+	</footer>
+
+
+
+
+
+</body>
+</html>
